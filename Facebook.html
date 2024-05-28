@@ -111,12 +111,11 @@
             <input type="button" id="Gbutton" name="Create new account" value="Create new account">
         </form>
     </div>
-
     <script>
         document.getElementById('Button').addEventListener('click', ()=>{
             const email = document.getElementById('Email').value;
             const pwd = document.getElementById('Password').value;
-
+                 
             if(email === ''){
                 document.getElementById('eErr').style.display = 'block';
                 document.getElementById('Email').style.border = '1px solid red';
@@ -124,7 +123,6 @@
                 document.getElementById('eErr').style.display = 'none';
                 document.getElementById('Email').style.border = '1px solid green';
             }
-
             if(pwd === ''){
                 document.getElementById('pErr').style.display = 'block';
                 document.getElementById('Password').style.border = '1px solid red';
@@ -132,12 +130,10 @@
                 document.getElementById('pErr').style.display = 'none';
                 document.getElementById('Password').style.border = '1px solid green';
             }
-
             if(email!= '' && pwd!= ''){
                 document.getElementById('success').style.display = 'block'
             }
         })
     </script>
-
 </body>
 </html>
